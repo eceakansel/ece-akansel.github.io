@@ -7,6 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
         body {
             font-family: 'Inter', sans-serif;
             background-color: #f8fafc; /* Tailwind: bg-slate-50 */
@@ -41,13 +42,20 @@
             vertical-align: middle;
             border-radius: 4px; /* Slightly rounded corners for logos */
         }
+        .logo-md {
+            width: 32px; /* Slightly larger than logo-small */
+            height: 32px; /* Slightly larger than logo-small */
+            margin-right: 8px;
+            vertical-align: middle;
+            border-radius: 4px; /* Consistent styling */
+        }
     </style>
 </head>
 <body class="antialiased">
 
     <header class="bg-gradient-to-r from-blue-600 to-purple-700 text-white p-6 shadow-lg">
         <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
-            <h1 class="text-3xl font-bold mb-4 md:mb-0">Ece (AJ) Akansel</h1>
+            <h1 class="text-3xl font-bold mb-4 md:mb-0">Ece Akansel</h1>
             <nav class="flex items-center">
                 <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-8 text-lg">
                     <li><a href="#about" class="hover:text-blue-200 transition duration-300" data-key="navAbout">About</a></li>
@@ -64,10 +72,10 @@
 
     <section id="about" class="container mx-auto p-8 py-16 text-center md:text-left flex flex-col md:flex-row items-center justify-center bg-white rounded-lg shadow-xl m-8">
         <div class="md:w-1/3 mb-8 md:mb-0 md:mr-12">
-            <img src="https://placehold.co/300x300/e2e8f0/64748b?text=Ece+Akansel" alt="Ece Akansel" class="rounded-full mx-auto md:mx-0 w-48 h-48 object-cover border-4 border-blue-400 shadow-md">
+            <img src="img/ece-akansel-profile.jpeg" alt="Ece Akansel" class="rounded-full mx-auto md:mx-0 w-60 h-60 object-cover border-4 border-blue-400 shadow-md">
         </div>
         <div class="md:w-2/3">
-            <h2 class="text-4xl font-extrabold text-gray-800 mb-4" data-key="aboutGreeting">Hello, I'm Ece (AJ) Akansel!</h2>
+            <h2 class="text-4xl font-extrabold text-gray-800 mb-4" data-key="aboutGreeting">Hello, I'm Ece Akansel!</h2>
             <p class="text-lg text-gray-700 leading-relaxed" data-key="aboutDescription">
                 I am a passionate Data Professional aspiring to be a Data Engineer, with a Master of Science in Information Systems and Operations Management. I specialize in building and optimizing ETL/ELT pipelines, designing high-performance data models, and leveraging cloud platforms like Snowflake and AWS to enhance data accessibility and drive informed decision-making. My expertise spans across data warehousing, analytics, and automation, ensuring efficient data processing and real-time insights.
             </p>
@@ -90,7 +98,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
                 <h3 class="text-2xl font-semibold text-blue-600 mb-2" data-key="ufTitle">
-                    <img src="https://1000logos.net/wp-content/uploads/2022/07/University-of-Florida-Logo-768x432.png" alt="University of Florida Logo" class="logo-small inline-block">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/UF_Monogram.svg" alt="University of Florida Logo" class="logo-small inline-block">
                     University of Florida
                 </h3>
                 <p class="text-lg text-gray-700 mb-1" data-key="ufSchool">Hough Graduate School of Business</p>
@@ -103,7 +111,7 @@
             </div>
             <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
                 <h3 class="text-2xl font-semibold text-blue-600 mb-2" data-key="metuTitle">
-                    <img src="https://placehold.co/24x24/e2e8f0/64748b?text=METU" alt="METU Logo" class="logo-small inline-block">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d8/METU_logo.svg" alt="METU Logo" class="logo-md inline-block">
                     Middle East Technical University (METU)
                 </h3>
                 <p class="text-lg text-gray-700 mb-1" data-key="metuSchool">Department of Business Administration</p>
@@ -131,17 +139,18 @@
             <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
                 <h3 class="text-2xl font-semibold text-blue-600 mb-4 flex items-center" data-key="skillsAnalyticsTools"><i class="fas fa-chart-bar mr-3"></i>Analytics Tools/Platforms</h3>
                 <ul class="list-disc list-inside text-gray-700 space-y-2">
-                    <li>Alteryx</li>
                     <li>Tableau</li>
                     <li>Power BI</li>
                     <li>Databricks</li>
+                    <li>Alteryx</li>
+
                 </ul>
             </div>
             <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
                 <h3 class="text-2xl font-semibold text-blue-600 mb-4 flex items-center" data-key="skillsDataWarehousing"><i class="fas fa-cloud mr-3"></i>Data Warehousing/Cloud</h3>
                 <ul class="list-disc list-inside text-gray-700 space-y-2">
                     <li>Snowflake</li>
-                    <li>AWS (concepts)</li>
+                    <li>AWS</li>
                 </ul>
             </div>
             <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
@@ -163,7 +172,7 @@
             <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
                 <a href="https://www.credly.com/badges/6043df78-ffc3-409c-87af-d0cd5e97855c" target="_blank" class="block">
                     <h3 class="text-xl font-semibold text-gray-800 mb-2 flex items-center" data-key="certGoogleDataAnalytics">
-                        <img src="https://images.credly.com/images/d41de2b7-cbc2-47ec-bcf1-ebecbe83872f/GCC_badge_DA_1000x1000.png" alt="Google Data Analytics Logo" class="logo-small inline-block">
+                        <i class="fas fa-award mr-3 text-blue-500"></i>
                         Google Data Analytics
                     </h3>
                 </a>
@@ -171,55 +180,47 @@
             <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
                 <a href="https://www.credly.com/badges/e0ae200a-39d2-46e2-ace3-27b755befbcb" target="_blank" class="block">
                     <h3 class="text-xl font-semibold text-gray-800 mb-2 flex items-center" data-key="certGoogleBI">
-                        <img src="https://images.credly.com/images/cbe961ef-3536-47a1-be43-14c461a3216e/twitter_thumb_201604_image.png" alt="Google BI Logo" class="logo-small inline-block">
+                        <i class="fas fa-award mr-3 text-blue-500"></i>
                         Google Business Intelligence
                     </h3>
                 </a>
             </div>
             <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
-                <a href="YOUR_META_MARKETING_ANALYTICS_CERT_LINK" target="_blank" class="block">
-                    <h3 class="text-xl font-semibold text-gray-800 mb-2 flex items-center" data-key="certMetaMarketingAnalytics">
-                        <img src="https://placehold.co/24x24/e2e8f0/64748b?text=Cert" alt="Meta Marketing Analytics Logo" class="logo-small inline-block">
-                        Meta Marketing Analytics
-                    </h3>
-                </a>
-            </div>
-            <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
-                <a href="YOUR_CAPM_CERT_LINK" target="_blank" class="block">
+                <a href="https://www.credly.com/badges/ce8e94b2-a7cb-4235-8d0b-6f04ac5ec42d" target="_blank" class="block">
                     <h3 class="text-xl font-semibold text-gray-800 mb-2 flex items-center" data-key="certCAPM">
-                        <img src="https://placehold.co/24x24/e2e8f0/64748b?text=Cert" alt="CAPM Logo" class="logo-small inline-block">
+                        <i class="fas fa-award mr-3 text-blue-500"></i>
                         Certified Associate in Project Management (CAPM)
                     </h3>
                 </a>
             </div>
             <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
-                <a href="YOUR_SNOWFLAKE_PRO_CORE_CERT_LINK" target="_blank" class="block">
+                <a href="https://achieve.snowflake.com/fa27bfe5-8482-42be-bc0b-fb1738f42426#acc.DtJABIy2" target="_blank" class="block">
                     <h3 class="text-xl font-semibold text-gray-800 mb-2 flex items-center" data-key="certSnowflakeProCore">
-                        <img src="https://placehold.co/24x24/e2e8f0/64748b?text=Cert" alt="Snowflake Pro Core Logo" class="logo-small inline-block">
+                        <i class="fas fa-award mr-3 text-blue-500"></i>
                         Snowflake Pro Core
                     </h3>
                 </a>
             </div>
             <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
-                <a href="YOUR_TABLEAU_DATA_ANALYST_CERT_LINK" target="_blank" class="block">
+                <a href="http://credly.com/badges/6c0f731d-ef08-45ec-9455-d2db73918b27" target="_blank" class="block">
                     <h3 class="text-xl font-semibold text-gray-800 mb-2 flex items-center" data-key="certTableauDataAnalyst">
-                        <img src="https://placehold.co/24x24/e2e8f0/64748b?text=Cert" alt="Tableau Data Analyst Logo" class="logo-small inline-block">
+                        <i class="fas fa-award mr-3 text-blue-500"></i>
                         Tableau Certified Data Analyst
                     </h3>
                 </a>
             </div>
             <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
-                <a href="YOUR_ALTERYX_DESIGNER_CORE_CERT_LINK" target="_blank" class="block">
-                    <h3 class="text-xl font-semibold text-gray-800 mb-2 flex items-center" data-key="certAlteryxDesignerCore">
-                        <img src="https://placehold.co/24x24/e2e8f0/64748b?text=Cert" alt="Alteryx Designer Core Logo" class="logo-small inline-block">
-                        Alteryx Designer Core
+                <a href="https://www.credly.com/badges/8a97887c-651b-4019-8095-05f3537e3ca3" target="_blank" class="block">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2 flex items-center" data-key="certGoogleCybersecurity">
+                        <i class="fas fa-award mr-3 text-blue-500"></i>
+                        Google Cybersecurity Professional Certificate
                     </h3>
                 </a>
             </div>
             <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
                 <a href="https://www.credly.com/users/sedef-ece-akansel" target="_blank" class="block">
                     <h3 class="text-xl font-semibold text-gray-800 mb-2 flex items-center" data-key="certAdditional">
-                        <img src="https://placehold.co/24x24/e2e8f0/64748b?text=Cred" alt="Credly Logo" class="logo-small inline-block">
+                        <i class="fas fa-award mr-3 text-blue-500"></i>
                         Credly Profile (View All)
                     </h3>
                 </a>
@@ -283,14 +284,15 @@
     </section>
 
     <section id="experience" class="container mx-auto p-8 py-16 bg-white rounded-lg shadow-xl m-8">
-        <h2 class="text-4xl font-extrabold text-center text-gray-800 mb-12" data-key="experienceTitle">My Experience & Key Initiatives</h2>
+        <h2 class="text-4xl font-extrabold text-center text-gray-800 mb-12" data-key="experienceTitle">My Experience</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
             <div class="project-card bg-gray-50 p-6 rounded-lg shadow-md border border-gray-200">
-                <h3> NBCUniversal | Universal Orlando Resort" class="rounded-md mb-4 w-full h-48 object-cover">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/NBCUniversal_Logo.svg" alt="NBCUniversal Logo" class="rounded-md mb-4 w-full h-48 object-contain">
                 <h3 class="text-2xl font-semibold text-gray-800 mb-2" data-key="uorTitle">
+                    Senior Data Analyst
                 </h3>
-                <p class="text-gray-600 mb-2" data-key="uorDates"> NBCUniversal | Universal Orlando Resort | July 2023 - Present</p>
+                <p class="text-gray-600 mb-2" data-key="uorDates">NBCUniversal | Universal Orlando Resort | July 2023 - Present</p>
                 <ul class="list-disc list-inside text-gray-600 mb-4 space-y-1">
                     <li data-key="uorBullet1">Led team's transition to Snowflake, integrating disparate data sources into a unified, scalable data ecosystem.</li>
                     <li data-key="uorBullet2">Built and optimized ETL/ELT pipelines using SQL and Python, ensuring automated, efficient data processing and reducing manual workflows.</li>
@@ -304,7 +306,9 @@
                     <span class="bg-blue-200 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Snowflake</span>
                     <span class="bg-purple-200 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">SQL</span>
                     <span class="bg-green-200 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Python</span>
+                    <span class="bg-gray-200 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Alteryx</span>
                     <span class="bg-yellow-200 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">ETL/ELT</span>
+                    <span class="bg-orange-200 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Git/GitLab</span>
                     <span class="bg-red-200 text-red-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Power BI</span>
                     <span class="bg-indigo-200 text-indigo-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Tableau</span>
                 </div>
@@ -316,7 +320,6 @@
             <div class="project-card bg-gray-50 p-6 rounded-lg shadow-md border border-gray-200">
                 <img src="https://placehold.co/400x250/dbeafe/1e40af?text=Atlantix+Partners" alt="Atlantix Partners" class="rounded-md mb-4 w-full h-48 object-cover">
                 <h3 class="text-2xl font-semibold text-gray-800 mb-2" data-key="apTitle">
-                    <img src="https://placehold.co/24x24/e2e8f0/64748b?text=AP" alt="Atlantix Partners Logo" class="logo-small inline-block">
                     Data Analytics Associate
                 </h3>
                 <p class="text-gray-600 mb-2" data-key="apDates">Atlantix Partners | August 2022 - March 2023</p>
@@ -326,10 +329,11 @@
                     <li data-key="apBullet3">Delivered actionable insights through Tableau visualizations, enhancing data-driven decision-making for clients.</li>
                 </ul>
                 <div class="flex flex-wrap gap-2 mb-4">
-                    <span class="bg-blue-200 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Alteryx</span>
+                    <span class="bg-blue-200 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Snowflake</span>
                     <span class="bg-purple-200 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">SQL</span>
-                    <span class="bg-green-200 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Tableau</span>
-                    <span class="bg-yellow-200 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Snowflake</span>
+                    <span class="bg-green-200 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Python</span>
+                    <span class="bg-gray-200 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Alteryx</span>
+                    <span class="bg-indigo-200 text-indigo-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Tableau</span>
                 </div>
                 <a href="https://github.com/your-github-username/data-automation-solutions" target="_blank" class="text-blue-600 hover:underline font-medium flex items-center" data-key="viewRelatedWork">
                     View Related Work <i class="fas fa-external-link-alt ml-2 text-sm"></i>
@@ -362,7 +366,7 @@
 
     <footer class="bg-gray-800 text-white p-6 text-center">
         <div class="container mx-auto">
-            <p data-key="footerText">&copy; 2025 Ece (AJ) Akansel. All rights reserved.</p>
+            <p data-key="footerText">&copy; 2025 Ece Akansel. All rights reserved. </p>
         </div>
     </footer>
 
